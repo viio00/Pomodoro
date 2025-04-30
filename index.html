@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+
+    </head>
+    <body>
+        <div id="titlebar">
+            <div class="btn" >
+                <img  id="close" src="Objects/quit.png" alt="Close" onclick="quit()">
+            </div>
+            
+            <div class="btn">
+                <img id="minimize" src="Objects/min.png" alt="Minimize" onclick="min()">
+            </div>
+        </div>
+
+        <div id="main">
+            <div id="outerBorder">
+                 <div id="bodybg">
+                    <div class="firstMain">
+                        <img src="Objects/StudyTimer.png" alt="studytimer" class="studyTxt">
+                        <img src="Objects/Txt.png" alt="jpn txt" class="jpnTxt">
+                        <img src="Objects/totoro1.gif" alt="Totoro GIF" class="icon">
+                        <img src="Objects/Strt.png" class="buttonStart" onclick="showPage('pg1')">
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+    
+        <div id="pg1" style="display: none" >
+            <div id="outerBorder">
+                <div id="bodybg">
+                    <div>
+                        <img id="turnip" src="Objects/Icon_Turnip/Trnp1.png" class="icon_Turnip" onclick="showPage('min25')">
+                        <img src="Objects/Start 25 Minutes.png" class="txt25">
+                    </div>
+
+                    <div>
+                        <img src="Objects/Icon_cal/Cal1.png" class="icon_Cal" onclick="showPage('break')">
+                        <img src="Objects/Break Time.png" class="txtBrk">
+                    </div>
+
+                        <img src="Objects/Back.png" class="buttonBack" onclick="showPage('main')">
+                </div>
+            </div>
+        </div>
+
+        <div id="min25" style="display: none">
+            <div id="outerBorder">
+                <div id="bodybg">
+                        <img id="catBus" src="Objects/Icon_CatBus/catBus1.png" class="icon_CB">
+                    <div id="timer">
+                        <img id="minTens" class="digit">
+                        <img id="minOnes" class="digit">
+                        <span>:</span>
+                        <img id="secTens" class="digit">
+                        <img id="secOnes" class="digit">
+                    </div>
+                    <div class="buttonsTimer">
+                        <img id="strtBtn25" src="Objects/Strt.png" class="buttonStart">
+                        <img id="stop" src="Objects/Stop.png" class="buttonStop">
+                    </div>
+                        <img id="back" src="Objects/Back.png" class="buttonBack" onclick="showPage('pg1')">
+                </div>
+            </div>
+        </div>
+
+        <div id="break" style="display: none">
+            <div id="outerBorder">
+                <div id="bodybg"> 
+                    <div class="absButtonBreak">
+                        <img id="fiveMin" src="Objects/buttonsBreak/5m.png" onclick="showPage('forFive')">
+                        <img id="ftnMin" src="Objects/buttonsBreak/15m.png" onclick="showPage('forFifteen')">
+                        <img id="thrtMin" src="Objects/buttonsBreak/30m.png" onclick="showPage('forThirty')">
+                    </div>
+                        <img src="Objects/Back.png" class="buttonBack" onclick="showPage('pg1')">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="forFive" style="display: none;">
+            <div id="outerBorder">
+                <div id="bodybg">
+                    <img id="catBus2" src="Objects/Icon_CatBus/catBus1.png" class="icon_CB">
+                    <div id="timer">
+                        <img id ="minTens5" class="digit">
+                        <img id ="minOnes5" class="digit">
+                        <span>:</span>
+                        <img id ="secTens5" class="digit">
+                        <img id ="secOnes5" class="digit">
+                    </div>
+                    <div class="buttonsTimer">
+                        <img id="strtBtn5" src="Objects/Strt.png" class="buttonStart">
+                        <img id="stop5" src="Objects/Stop.png" class="buttonStop">
+                    </div>
+                    <img id="back5" src="Objects/Back.png" class="buttonBack" onclick="showPage('break')">
+                </div>
+            </div>
+        </div>
+
+        <div id="forFifteen" style="display: none;">
+            <div id="outerBorder">
+                <div id="bodybg">
+                    <img id="catBus3" src="Objects/Icon_CatBus/catBus1.png" class="icon_CB">
+                    <div id="timer">
+                        <img id="minTensF" class="digit">
+                        <img id="minOnesF" class="digit">
+                        <span>:</span>
+                        <img id="secTensF" class="digit">
+                        <img id="secOnesF" class="digit">
+                    </div>
+                    <div class="buttonsTimer">
+                        <img id="strtBtn15" src="Objects/Strt.png" class="buttonStart">
+                        <img id="stop15" src="Objects/Stop.png" class="buttonStop">
+                    </div>
+                    <img id="back15" src="Objects/Back.png" class="buttonBack" onclick="showPage('break')">
+                </div>
+            </div>
+        </div>
+
+        <div id="forThirty" style="display: none;">
+            <div id="outerBorder">
+                <div id="bodybg">
+                    <img id="catBus4" src="Objects/Icon_CatBus/catBus1.png" class="icon_CB">
+                    <div id="timer">
+                        <img id="minTensT" class="digit">
+                        <img id="minOnesT" class="digit">
+                        <span>:</span>
+                        <img id="secTensT" class="digit">
+                        <img id="secOnesT" class="digit">
+                    </div>
+                    <div class="buttonsTimer">
+                        <img id="strtBtn30" src="Objects/Strt.png" class="buttonStart">
+                        <img id="stop30" src="Objects/Stop.png" class="buttonStop">
+                    </div>
+                    <img id="back30" src="Objects/Back.png" class="buttonBack" onclick="showPage('break')">
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,210 @@
+#titlebar {
+    -webkit-app-region: drag;
+    background-color:#adc7ff;
+    height: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 10px;
+    pointer-events: auto;
+  }
+.btn {
+    -webkit-app-region: no-drag;
+    cursor: pointer;
+    margin-left: 5px;
+    margin-top: 2px;
+  }
+
+.btn img {
+    width: 17px;
+    height: 17px;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+.btn:active img{
+    opacity: 0.6;
+    transform: scale(0.95);
+}
+
+body {
+    background: transparent;
+    overflow: hidden;
+}
+#outerBorder {
+    margin: 0 ;
+    padding: 0 ;
+    box-sizing: border-box;
+    border-left: 10px solid #adc7ff;
+    border-right: 10px solid #adc7ff;
+    border-bottom: 10px solid #adc7ff;
+}
+#bodybg {
+    background-image:  url("Objects/Bg.png");
+    background-size: cover; 
+    background-position:center; 
+    background-repeat: no-repeat; 
+
+    margin: 0 ;
+    padding: 0 ;
+    box-sizing: border-box;
+
+    border-left: 1.5px solid #000000;
+    border-right: 1.5px solid #000000;
+    border-bottom: 1.5px solid #000000;
+    border-top: 1.5px solid #000000;
+    height: calc(100vh - 50px);
+}
+
+.firstMain {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.studyTxt {
+    width: 400px;
+    margin-top: 30px;
+}
+.jpnTxt {
+    width: 120px;
+    margin-top: 10px;
+}
+.icon {
+    width: 180px; 
+    margin-top: 10px;
+    transition: transform 0.3s ease; 
+    cursor: pointer; 
+}
+.icon:hover {
+    transform: scale(1.1); 
+}
+
+.buttonStart, .buttonBack, .buttonStop {
+    transition: transform 0.3s ease, opacity 0.2s ease;; 
+    cursor: pointer; 
+} 
+.buttonBack:hover,.buttonStart:hover, .buttonStop:hover  {
+    transform: scale(1.1); 
+}
+.buttonBack:active,.buttonStart:active  {
+    transform: scale(0.95); 
+}
+.buttonStart, .buttonStop  {
+    width: 100px;
+}
+
+.buttonBack {
+    height: 35px;
+    width: 95px;
+    position: absolute;
+    bottom: 50px;
+    left: 35%;
+}
+
+.buttonsTimer {
+    position: absolute;
+    bottom: 30%;
+    left: 18%;
+}
+
+.icon_Turnip {
+    margin-top: 30px;
+    margin-left: 35px;
+    width: 100px;
+    height: 100px;
+    transition: transform 0.3s ease; 
+    cursor: pointer; 
+}
+  
+.icon_Turnip:hover {
+    transform: scale(1.1);
+    content: url("Objects/Icon_Turnip/TrnpGif.gif");
+}
+
+.icon_Turnip:active{
+    transform: scale(0.95);
+}
+
+.icon_Cal {
+    margin-top: 30px;
+    margin-left: 35px;
+    width: 90px;
+    height: 90px;
+    transition: transform 0.3s ease; 
+    cursor: pointer; 
+}
+.icon_Cal:hover {
+    transform: scale(1.1);
+    content: url("Objects/Icon_cal/Calgif.gif");
+}
+.icon_Cal:active{
+    transform: scale(0.95);
+}
+
+.icon_CB {
+    width: 200px;
+    height: 140;
+    position: absolute;
+    margin-top: 50px;
+    left: 25%;
+}
+
+#fiveMin, #ftnMin, #thrtMin {
+    width: 140px;
+    height: 55px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease; 
+    cursor: pointer; 
+    box-shadow:  0 4px 8px rgba(0, 0, 0, 0.3); 
+}
+#fiveMin:hover, #ftnMin:hover, #thrtMin:hover {
+    transform: scale(0.95); 
+}
+#fiveMin:active, #ftnMin:active, #thrtMin:active {
+    transform: scale(0.90);
+    opacity: 0.6;
+}
+
+
+
+.txt25 {
+    width: 95px;
+    height: 40px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.txtBrk {
+    width: 75px;
+    height: 45px;
+    margin-left: 40px;
+    margin-bottom: 30px;
+}
+
+#pg1{
+    display:inline-block;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.absButtonBreak{
+    position: absolute;
+    margin-top: 20%;
+    left: 28%;
+}
+
+#timer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.digit {
+    width: 32px;
+    height: 48px;
+    background-image: url("Objects/sprite_00.png");
+    background-repeat: no-repeat;
+    background-size: 32px 480px;
+}
+
