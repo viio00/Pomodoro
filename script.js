@@ -33,6 +33,18 @@ function setDigit(elementId, digit) {
 let timer;
   let mins = 0;
   let secs = 0;
+  const alarm = new Audio('Objects/AlarmPopUp/Alarm.mp3');
+  alarm.loop = true;
+
+  function openForm() {
+    document.getElementById("alarmPop").style.display = "block";
+    alarm.play();
+
+    document.getElementById("exitAlarm").addEventListener("click", () => {
+      document.getElementById("alarmPop").style.display = "none";
+      alarm.pause();
+    })
+  }
   
 document.addEventListener("DOMContentLoaded", () => {
 
@@ -55,6 +67,10 @@ document.addEventListener("DOMContentLoaded", () => {
         clearInterval(timer);
         const icon = document.getElementById("catBus");
         icon.src = "Objects/Icon_CatBus/catBus1.png";
+        stopIcon();
+
+        openForm();
+
       } else {
         if (secs === 0) {
           mins--;
@@ -107,6 +123,8 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("strtBtn25").addEventListener("click", () => {
     startCountdown(25,0);
     activateIconCB();
+    
+    
   })
 })
 
@@ -131,6 +149,10 @@ document.addEventListener("DOMContentLoaded", () => {
         clearInterval(timer);
         const icon = document.getElementById("catBus2");
         icon.src = "Objects/Icon_CatBus/catBus1.png";
+        stopIcon2();
+
+        openForm();
+
       } else {
         if (secs === 0) {
           mins--;
@@ -207,6 +229,9 @@ document.addEventListener("DOMContentLoaded", () => {
         clearInterval(timer);
         const icon = document.getElementById("catBus3");
         icon.src = "Objects/Icon_CatBus/catBus1.png";
+        stopIcon3();
+
+        openForm();
       } else {
         if (secs === 0) {
           mins--;
@@ -284,6 +309,9 @@ document.addEventListener("DOMContentLoaded", () => {
         clearInterval(timer);
         const icon = document.getElementById("catBus4");
         icon.src = "Objects/Icon_CatBus/catBus1.png";
+        stopIcon4();
+
+        openForm();
       } else {
         if (secs === 0) {
           mins--;
@@ -338,3 +366,6 @@ document.addEventListener("DOMContentLoaded", () => {
     activateIconCB4();
   })
 })
+
+
+
