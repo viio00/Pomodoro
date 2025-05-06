@@ -1,8 +1,9 @@
 # Simple Pomodoro Timer  
 
-**STATUS:** *Might add ringtone*  
+**STATUS:** *Finished*  
 
-My code ain't clean but atleat it works
+My code ain't clean but atleast it works  
+procrastinated a bit so it took me 1 month to actually finish :P
   
 <p align="center">
   <img src="https://github.com/viio00/Pomodoro/blob/main/images/MAIN.png" alt="main" width="200">
